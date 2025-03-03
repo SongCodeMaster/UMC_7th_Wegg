@@ -88,6 +88,8 @@ class CommentViewController: UIViewController {
         
         Task {
             do {
+
+                
                 // ✅ 댓글 등록 API 호출
                 let response = try await postDetailService.postComment(
                     postId: postId, content: text)
